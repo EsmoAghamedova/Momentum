@@ -1,26 +1,42 @@
-# Momentum
+# Momentum (Backend-Only)
 
-## 01 THE IDEA
+Momentum is a backend-only productivity API focused on task management, collaboration, and analytics for students, freelancers, and small teams.
 
-### What is Momentum?
+## Project Scope
 
-Momentum is a lightweight productivity web app built for students, freelancers, and small teams who need a simple, clean way to manage their tasks and track progress. Unlike heavyweight tools like Jira or Notion, Momentum focuses on one thing: helping you move tasks from idea to done, with just enough structure to stay organised.
+This repository contains **backend architecture and planning documentation only**.
 
-### Core value proposition
+- No frontend application code is included.
+- All planning and implementation decisions are API-first.
+- The system is designed to support web/mobile clients through REST (and optional WebSocket).
 
-- Create, organise, and track tasks across three statuses: Planned, In Progress, Done.
-- Visual Kanban board for an instant overview of everything on your plate.
-- Personal dashboard with progress charts so you can see how productive you've been.
-- Category system to group tasks by project, subject, or priority.
-- Clean, fast, mobile-friendly UI - no bloat, no learning curve.
+## Core Backend Capabilities
 
-### Target users
+- Authentication and authorization (JWT access/refresh flow)
+- Task management (CRUD, status transitions, filtering, pagination)
+- Category management
+- Team collaboration (memberships and roles)
+- Notification pipeline
+- Dashboard/statistics endpoints
+- User settings and onboarding state
 
-**Students**
-- Track assignments, deadlines, and exam prep across subjects.
+## Repository Files
 
-**Freelancers**
-- Manage client projects and personal to-dos in one place.
+- `README.md` → Project overview (this file)
+- `TECHNICAL_PLAN.md` → Detailed backend architecture and delivery plan
 
-**Small teams**
-- Share a task board with a teammate, assign work, stay aligned.
+## Backend-Only Principles
+
+1. **API-first design**: contract-driven endpoints and stable schemas
+2. **Clear domain boundaries**: auth, tasks, categories, teams, notifications, stats
+3. **Production readiness**: observability, testing, secure config, CI/CD
+4. **Client-agnostic**: backend serves any frontend/client implementation
+
+## Status
+
+- Current state: **Documentation-only backend blueprint**
+- Next step: scaffold and implement the backend according to `TECHNICAL_PLAN.md`
+
+## License
+
+No license specified yet.
